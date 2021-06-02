@@ -10,11 +10,14 @@ namespace RockPaperScissors1
             bool succesfulConversion = false;
             bool successConversion = false;
             int playerChoiceInt;
-            Console.WriteLine("\tWelcome to Rock-Paper-Scissors!\nPlease enter your name.");
+            Console.WriteLine("\n\tWelcome to Rock-Paper-Scissors!\n \nPlease enter your name.");
             string playerName = Console.ReadLine();
+
+            //loop to continue playing
             do{
                 int i=0;
 
+                //for loop used to play 3 rounds
                 for(i=0;i<3;i++){
                     Console.WriteLine($"\n{playerName} please make a choice!");
 
@@ -67,11 +70,11 @@ namespace RockPaperScissors1
 
                 */
 
-                //Console.WriteLine("\nPlay again? Enter 1\nExit? Enter 0");
                 Console.WriteLine("\nEnter\n1 to Play Again\n0 to Exit");
                 string continueGame = Console.ReadLine();
                 successConversion = Int32.TryParse(continueGame, out continueGameInt);
 
+                //check if the user inputed a number but the number is out of bounds. loops until within bounds
                 while(!successConversion || (continueGameInt > 1 || continueGameInt < 0)){
                     Console.Write($"\n{playerName} you entered an incorrect value.\nPlease try again.\n");
                     continueGame = Console.ReadLine();
