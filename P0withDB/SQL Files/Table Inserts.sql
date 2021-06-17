@@ -1,0 +1,101 @@
+Insert into ProductDept(product_dept)
+values('Fruits & Vegetables'),
+('Meat & Seafood'),
+('Bakery & Bread'),
+('Dairy & Eggs'),
+('Pantry'),
+('Frozen Food'),
+('Beverages'),
+('Everyday Essentails');
+
+SELECT * FROM ProductDept;
+
+Insert into Products(product_name, product_desc, product_price, dept_id)
+values('Strawberries','Fresh Hydroponic Strawberries, 1 lb', 3.07, 1),
+('Blueberries','Fresh Blueberries, 18oz', 5.85, 1),
+('Gala Apples','Fresh Gala Apples, 3 lb bag', 3.33, 1),
+('Bananas','Fresh Bananas, sold by the bunch (5-7)', 1.54, 1),
+('Tri-Color Grapes','Fresh Tri-Color Grapes, 3 lb', 9.25, 1),
+('Watermelon Slices','Fresh Watermelon Tray, (3-4) Avg. 2.52 lbs', 3.25, 1),
+('Ground Beef Chuck','80% Lean Ground Beef, Avg. 1.25 lbs', 5.01, 2),
+('Bacon','H-E-B Original Bacon, 12oz', 4.42, 2),
+('Chicken Breast Tenders','H-E-B Natural Boneless Chicken Breast, Avg. 0.94 lbs', 4.83, 2),
+('New York Strip','Beef New York Strip Steak Boneless, USDA Select, Avg. 0.74 lbs', 9.50, 2),
+('Salmon Fillet','Wild Caught Sockeye Salmon Fillet, 1 lbs', 14.39, 2),
+('Beef Skirt Steak','Mi Tienda Seasoned Beef Skirt Steak, Avg. 3.9 lbs', 28.08, 2),
+('Wheat Bread','Split Top Honey Wheat Bread, 24oz', 2.06, 3),
+('Whole Wheat Bread','Essential Gains 100% Whole Wheat Bread, 24oz', 2.55, 3),
+('Sandwich Bread','Country White Sandwich Bread, Half, 13oz', 2.55, 3),
+('Macadamia Cookies','Gourmet White Chocolate Macadamia Cookies, 6 ct', 5.13, 3),
+('Bread Crumbs','Progresso Italian Stle Bread Crumbs, 15oz', 1.73, 3),
+('Fish Breading','Hill Country Fare Spicy Fish Fry, 10oz', 0.92, 3),
+('Crescent Dinner Rolls','Pillsbury Original Cresent Dinner Rolls, 8 ct', 2.25, 4),
+('Flaky Biscuits','Pillsbury Grands! Flaky Layers Original Biscuits, 5 ct', 1.51, 4),
+('Cinnamon Rolls','Pillsbury Cinnamon Rolls with Icing, 8 ct', 2.25, 4),
+('Mexican Style Cheese','Select Ingredients Mexican Style Cheese, Thick Shredded, 8 oz', 2.86, 4),
+('White Eggs','Grade AA Cage Free Extra Large White Eggs, 12 ct', 2.82, 4),
+('Whole Milk','Dairy Pure Whole Milk, 1 gal', 3.37, 4),
+('All Purpose Flour','Hill Country Fare All Purpose Flour, 2 lbs', 1.03, 5),
+('Baking Soda','Hill Country Fare Pure Baking Soda, 16oz', 0.74, 5),
+('Vanilla Extract','McCormick Pure Vanilla Extract, 1oz', 5.13, 5),
+('Frosted Flakes Cereal','Select Ingredients Sugar Frosted Flakes Cereal, 17oz', 2.55, 5),
+('Ketchup','Select Ingredients Ketchup, 20oz', 2.06, 5),
+('Yellow Mustard','Select Ingredients Yellow Mustard, 14oz', 1.01, 5),
+('Texas Toast','5 Cheese Texas Toast, 8 ct', 2.45, 6),
+('Garlic Bread','Traditional Garlic Bread, 8oz', 1.32, 6),
+('Fun Nuggets','Tyson Fun Nuggets with Whole Grain Breading, 29oz', 5.46, 6),
+('Beef Burgers','Fully Cooked Beef Burgers, 6 ct', 8.99, 6),
+('Corn Dogs','State Fair 100% Beef Corn Dogs, 8 ct', 4.22, 6),
+('Meatballs','Fully Cooked Italian Style Meatballs, 35oz', 8.23, 6),
+('Orange Juice','Organics Pulp Free Orange Juice, 52oz', 4.10, 7),
+('Cranberry Apple Juice','100% Cranberry Apple Juice Blend, 64oz', 3.07, 7),
+('Lemonade','Simply Lemonade, 89oz', 4.00, 7),
+('Water Bottles','Nestle Pure Life Purified Water 16.9oz Bottles, 28 pk', 4.10, 7),
+('Dr Pepper Zero Cans','Dr Pepper Zero Sugar Soda 12oz Cans, 12 pk', 5.31, 7),
+('Sprite Mini Cans','Sprite Mini Lemon-Lime Soda 7.5oz Cans, 10 pl', 4.80, 7),
+('Liquid Dish Soap','Dawn Ultra Orginal Scent Liquid Dish Soap, 19.4oz', 2.72, 8),
+('Foam Plates','Hill Country Essentials Heavy Weight Laminated Foam Plates, 80 ct', 5.12, 8),
+('Liquid Laundry Detergent','Tide Simply Clean & Refreshing Breeze Liquid Laundry Detergent 89 Loads, 128oz', 9.21, 8),
+('Paper Towels','Hill Country Essentials Invent-A-Size Big Roll Paper Towels, 6ct', 5.38, 8),
+('Toilet Paper','Hill Country Essentials Toilet Paper, 12 Double Rolls', 5.11, 8),
+('Gallon Trash Bags','Hill Country Essentials Drawstring Tall Kitchen 13 Gallon Trash Bags, 45 ct', 4.61, 8);
+
+Select * From Products;
+
+Insert into Stores(store_name, store_address)
+values('H-E-B - Kingsville', '409 E Kleberg Ave, Kingsville, TX 78363'),
+('H-E-B - Alice', '1115 E Main St, Alice, TX 78332'),
+('H-E-B - Robstown', '308 E Main Ave, Robstown, TX 78380'),
+('H-E-B - Falfurrias', '700 S St Marys St, Falfurrias, TX 78355'),
+('H-E-B - Calallen', '11100 Leopard St, Corpus Christi, TX 78410'),
+('H-E-B - Corpus Christi', '5801 Weber Rd, Corpus Christi, TX 78413');
+
+Select * From Stores;
+
+Insert into StoreInventory(store_id, product_id, product_quantity)
+values(1,1,2),(1,2,20),(1,3,20),(1,4,20),(1,5,20),(1,6,20),(1,7,20),(1,8,20),(1,9,20),(1,10,20),(1,11,20),(1,12,20),(1,13,20),(1,14,20),(1,15,20),
+(1,16,20),(1,17,20),(1,18,20),(1,19,20),(1,20,20),(1,21,20),(1,22,20),(1,23,20),(1,24,20),(1,25,20),(1,26,20),(1,27,20),(1,28,20),(1,29,20),
+(1,30,20),(1,31,20),(1,32,20),(1,33,20),(1,34,20),(1,35,20),(1,36,20),(1,37,20),(1,38,20),(1,39,20),(1,40,20),(1,41,20),(1,42,20),(1,43,20),
+(1,44,20),(1,45,20),(1,46,20),(1,47,20),(1,48,20),
+(2,1,2),(2,2,20),(2,3,20),(2,4,20),(2,5,20),(2,6,20),(2,7,20),(2,8,20),(2,9,20),(2,10,20),(2,11,20),(2,12,20),(2,13,20),(2,14,20),(2,15,20),
+(2,16,20),(2,17,20),(2,18,20),(2,19,20),(2,20,20),(2,21,20),(2,22,20),(2,23,20),(2,24,20),(2,25,20),(2,26,20),(2,27,20),(2,28,20),(2,29,20),
+(2,30,20),(2,31,20),(2,32,20),(2,33,20),(2,34,20),(2,35,20),(2,36,20),(2,37,20),(2,38,20),(2,39,20),(2,40,20),(2,41,20),(2,42,20),(2,43,20),
+(2,44,20),(2,45,20),(2,46,20),(2,47,20),(2,48,20),
+(3,1,2),(3,2,20),(3,3,20),(3,4,20),(3,5,20),(3,6,20),(3,7,20),(3,8,20),(3,9,20),(3,10,20),(3,11,20),(3,12,20),(3,13,20),(3,14,20),(3,15,20),
+(3,16,20),(3,17,20),(3,18,20),(3,19,20),(3,20,20),(3,21,20),(3,22,20),(3,23,20),(3,24,20),(3,25,20),(3,26,20),(3,27,20),(3,28,20),(3,29,20),
+(3,30,20),(3,31,20),(3,32,20),(3,33,20),(3,34,20),(3,35,20),(3,36,20),(3,37,20),(3,38,20),(3,39,20),(3,40,20),(3,41,20),(3,42,20),(3,43,20),
+(3,44,20),(3,45,20),(3,46,20),(3,47,20),(3,48,20),
+(4,1,2),(4,2,20),(4,3,20),(4,4,20),(4,5,20),(4,6,20),(4,7,20),(4,8,20),(4,9,20),(4,10,20),(4,11,20),(4,12,20),(4,13,20),(4,14,20),(4,15,20),
+(4,16,20),(4,17,20),(4,18,20),(4,19,20),(4,20,20),(4,21,20),(4,22,20),(4,23,20),(4,24,20),(4,25,20),(4,26,20),(4,27,20),(4,28,20),(4,29,20),
+(4,30,20),(4,31,20),(4,32,20),(4,33,20),(4,34,20),(4,35,20),(4,36,20),(4,37,20),(4,38,20),(4,39,20),(4,40,20),(4,41,20),(4,42,20),(4,43,20),
+(4,44,20),(4,45,20),(4,46,20),(4,47,20),(4,48,20),
+(5,1,2),(5,2,20),(5,3,20),(5,4,20),(5,5,20),(5,6,20),(5,7,20),(5,8,20),(5,9,20),(5,10,20),(5,11,20),(5,12,20),(5,13,20),(5,14,20),(5,15,20),
+(5,16,20),(5,17,20),(5,18,20),(5,19,20),(5,20,20),(5,21,20),(5,22,20),(5,23,20),(5,24,20),(5,25,20),(5,26,20),(5,27,20),(5,28,20),(5,29,20),
+(5,30,20),(5,31,20),(5,32,20),(5,33,20),(5,34,20),(5,35,20),(5,36,20),(5,37,20),(5,38,20),(5,39,20),(5,40,20),(5,41,20),(5,42,20),(5,43,20),
+(5,44,20),(5,45,20),(5,46,20),(5,47,20),(5,48,20),
+(6,1,2),(6,2,20),(6,3,20),(6,4,20),(6,5,20),(6,6,20),(6,7,20),(6,8,20),(6,9,20),(6,10,20),(6,11,20),(6,12,20),(6,13,20),(6,14,20),(6,15,20),
+(6,16,20),(6,17,20),(6,18,20),(6,19,20),(6,20,20),(6,21,20),(6,22,20),(6,23,20),(6,24,20),(6,25,20),(6,26,20),(6,27,20),(6,28,20),(6,29,20),
+(6,30,20),(6,31,20),(6,32,20),(6,33,20),(6,34,20),(6,35,20),(6,36,20),(6,37,20),(6,38,20),(6,39,20),(6,40,20),(6,41,20),(6,42,20),(6,43,20),
+(6,44,20),(6,45,20),(6,46,20),(6,47,20),(6,48,20);
+
+Select * From StoreInventory;

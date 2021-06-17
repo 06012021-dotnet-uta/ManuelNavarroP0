@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>BusinessLayer</RootNamespace>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModelsLayer\ModelsLayer.csproj" />
+    <ProjectReference Include="..\P0DbContext\P0DbContext.csproj" />
+  </ItemGroup>
+
+</Project>
